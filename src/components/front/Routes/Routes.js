@@ -4,7 +4,11 @@ import Cart from '../Cart/Cart';
 import { Route, Switch } from 'react-router-dom';
 import Server from '../../Server/Server';
 
-const Routes = ({productItems,cartItems,handleAddProduct,handleRemoveProduct}) => {
+const Routes = ({productItems,
+                cartItems,
+                handleAddProduct,
+                handleRemoveProduct,
+                handleCartClearance}) => {
     return (
         <div>
             <Switch>
@@ -18,7 +22,8 @@ const Routes = ({productItems,cartItems,handleAddProduct,handleRemoveProduct}) =
                     <Cart 
                     cartItems={cartItems} 
                     handleAddProduct={handleAddProduct}
-                    handleRemoveProduct={handleRemoveProduct} />
+                    handleRemoveProduct={handleRemoveProduct}
+                    handleCartClearance={handleCartClearance} />
                 </Route>
             </Switch>
         </div>

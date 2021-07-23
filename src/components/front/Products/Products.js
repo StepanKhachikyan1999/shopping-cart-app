@@ -16,10 +16,10 @@ const Products = ({productItems,handleAddProduct}) => {
                         {productItem.name}
                     </h3>
                 </div>
-                <div className="product-price">{productItem.price}</div>
+                <div className="product-price">{productItem.price} ֏</div>
                 <div>
                     <button className="product-add-button" onClick={()=>handleAddProduct(productItem)}>
-                        Add to Cart
+                        Ավելացնել զամբյուղ
                     </button>
                 </div>
                 </div>
